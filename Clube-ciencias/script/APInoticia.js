@@ -1,14 +1,12 @@
 
 async function Noticias() {
-    var noticias = await fetch("https://ko6qqthj.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D%22noticia%22%5D%7B%0A++%22id%22%3A_id%2C%0A++++titulo%2C%0A++++subtitulo%2C%0A++++conteudo%2C%0A++++%22imagem%22%3Aimagem.asset-%3Eurl%2C%0A++++data%0A%7D%0A", {
+    var noticias = await fetch("https://ko6qqthj.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D%22noticia%22%5D+%7C+order%28data+desc%29%7B%0A++%22id%22%3A_id%2C%0A++++titulo%2C%0A++++subtitulo%2C%0A++++conteudo%2C%0A++++%22imagem%22%3Aimagem.asset-%3Eurl%2C%0A++++data%0A%7D%0A", {
         method: "GET"
     });
     var respostaEmJson = await noticias.json();
 
-    // Selecione o contêiner onde você deseja exibir as notícias
     const noticiasContainer = document.getElementById("noticiasContainer");
 
-    // Itere por todas as notícias na resposta da API
     for (const noticia of respostaEmJson.result) {
         // Crie elementos HTML para cada conjunto de notícias
         const noticiaDiv = document.createElement("div");
@@ -37,7 +35,7 @@ async function Noticias() {
         const img = document.createElement("img");
         img.classList.add("img-noticia");
         img.alt = "";
-        img.src = noticia.imagem;
+        img.src = noticia.imagem + "?h=600&w=600";
 
         // Adicione os elementos ao contêiner de notícias
         txtDiv.appendChild(tituloP);
@@ -62,23 +60,3 @@ Noticias();
 
 
 
-
-
-
-/*async function Noticias(){
-        var not = await fetch("https://ko6qqthj.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D%22noticia%22%5D%7B%0A++%22id%22%3A_id%2C%0A++++titulo%2C%0A++++subtitulo%2C%0A++++conteudo%2C%0A++++%22imagem%22%3Aimagem.asset-%3Eurl%2C%0A++++data%0A%7D%0A", {
-            method: "GET"
-        })
-        var respostaEmJson = await not.json()
-        var dados = respostaEmJson.result[0]
-
-        document.getElementById("idtit").innerText = dados.titulo
-        document.getElementById("idsub").innerText = dados.subtitulo
-        document.getElementById("idcont").innerHTML = dados.conteudo
-        document.getElementById("idimg").src = dados.imagem
-        document.getElementById("iddata").innerText = dados.data
-        
-        console.log(respostaEmJson)
-    }
-
-    Noticias()*/
