@@ -308,6 +308,16 @@ p{
     box-shadow: #000000b4 1px 5px 5px;
 }
 
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.stacked-image{
+    display: flex;
+    flex-direction: column;
+}
+
 /* vantagens */
 .conteudo-vantagens{
     width: 100%;
@@ -586,24 +596,26 @@ table.blueTable {
 }
 
 .profs{
-    
     margin: 20px;
     width: 450px;
     height: 150px;
-    display: flex;
-
-}
-
-.profs > img {
+    display: flex; 
     max-width: fit-content;
 }
 
+.profs>img{
+    border-radius: 50%;
+}
 #nome {
     padding-top: 20px;
-    /* border:1px solid red; */
     color:white;
     padding-left: 40px;
 }
+
+
+
+
+
 
 /*RODAPE*/
 footer{

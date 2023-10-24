@@ -1,0 +1,121 @@
+
+    <div class="noticia">
+        <div class="txt">
+            <p class="titulo" id="idtit"><!-- Clube de Ciências do Biopark revoluciona o ensino científico para jovens talentos</p>-->
+            <p class="subtitulo" id="idsub"> <!--Um espaço inovador onde a curiosidade se transforma em descobertas surpreendentes</p>-->
+            <p class="descricao" id="idcont">&emsp;<!--No Clube de Ciências do Biopark, uma revolução está em curso no ensino científico para jovens talentos. Com um ambiente estimulante e recursos de ponta, o clube está transformando a maneira como os jovens exploram o mundo da ciência. Com a missão de despertar a curiosidade e incentivar a criatividade, o clube oferece aos alunos um espaço único onde a curiosidade se transforma em descobertas surpreendentes. <br>
+
+                &emsp;Equipado com um laboratório de última geração e uma equipe de profissionais dedicados, o Clube de Ciências do Biopark proporciona aos jovens cientistas a liberdade de experimentar, explorar e mergulhar em projetos científicos desafiadores. Aqui, eles são incentivados a questionar, testar hipóteses e buscar soluções inovadoras para os problemas do mundo real.<br>
+                
+                &emsp;Além disso, o clube promove a participação em competições científicas renomadas, permitindo que os alunos demonstrem suas habilidades e conhecimentos, acumulando prêmios e reconhecimentos ao longo do caminho. O Clube de Ciências do Biopark está se tornando uma referência no cenário científico, atraindo jovens talentos e inspirando uma nova geração de cientistas.<br>
+                
+                &emsp;Com uma abordagem dinâmica e apaixonada pela ciência, o Clube de Ciências do Biopark está mudando a maneira como os jovens se envolvem com a ciência. Aqui, eles descobrem que a ciência é muito mais do que fórmulas e teorias, é uma jornada emocionante de exploração, descoberta e impacto no mundo. Prepare-se para se surpreender com as incríveis realizações que estão surgindo desse clube inovador e inspirador! <br><br>
+
+                18/02/2023-->
+                <p class="descricao" id="iddata"></p>
+           </p>
+        </div>
+        <picture>
+            <source media="(max-width: 500px)" srcset="img/img-vantagens-mobile.png">
+            <img class="img-noticia" id="idimg" alt="">
+            <!--src="img/img-vantagens.png"-->
+        </picture>
+    </div>
+
+    <div class="noticia">
+        <div class="txt">
+            <p class="titulo"> Clube de Ciências do Biopark revoluciona o ensino científico para jovens talentos</p>
+            <p class="subtitulo"> Um espaço inovador onde a curiosidade se transforma em descobertas surpreendentes</p>
+            <p class="descricao">&emsp;No Clube de Ciências do Biopark, uma revolução está em curso no ensino científico para jovens talentos. Com um ambiente estimulante e recursos de ponta, o clube está transformando a maneira como os jovens exploram o mundo da ciência. Com a missão de despertar a curiosidade e incentivar a criatividade, o clube oferece aos alunos um espaço único onde a curiosidade se transforma em descobertas surpreendentes. 
+
+                Equipado com um laboratório de última geração e uma equipe de profissionais dedicados, o Clube de Ciências do Biopark proporciona aos jovens cientistas a liberdade de experimentar, explorar e mergulhar em projetos científicos desafiadores. Aqui, eles são incentivados a questionar, testar hipóteses e buscar soluções inovadoras para os problemas do mundo real.
+                
+                Além disso, o clube promove a participação em competições científicas renomadas, permitindo que os alunos demonstrem suas habilidades e conhecimentos, acumulando prêmios e reconhecimentos ao longo do caminho. O Clube de Ciências do Biopark está se tornando uma referência no cenário científico, atraindo jovens talentos e inspirando uma nova geração de cientistas.
+                
+                Com uma abordagem dinâmica e apaixonada pela ciência, o Clube de Ciências do Biopark está mudando a maneira como os jovens se envolvem com a ciência. Aqui, eles descobrem que a ciência é muito mais do que fórmulas e teorias, é uma jornada emocionante de exploração, descoberta e impacto no mundo. Prepare-se para se surpreender com as incríveis realizações que estão surgindo desse clube inovador e inspirador!
+
+                18/02/2023
+           </p>
+        </div>
+        <picture>
+            <source media="(max-width: 500px)" srcset="img/img-vantagens-mobile.png">
+            <img class="img-noticia" src="img/img-vantagens.png" alt="">
+        </picture>
+    </div>
+
+
+
+
+    ---------------------------------------------
+
+
+
+    
+          <p>
+            <button class="campo-freq" id= "pergunta"type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <span><!--Até que idade pode participar?--></span>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <!--Para o pré clube de 4 a 8 anos, para o clube de 8 a 17 anos.-->
+            </div>
+          </div>
+
+            <!----------------------->
+          <p>
+            <button class="campo-freq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+              Como funciona o transporte?
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body">
+              Contamos com um transporte especializado que deixara seu filho em segurança nas portas do clube, onde um monitor estar o aguradnado.
+            </div>
+          </div>
+
+          <p>
+            <button class="campo-freq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+              Como sei que meu filho esta bem?
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample3">
+            <div class="card card-body">
+              Para garantir a segurança e o cuidado dos alunos, contamos com uma equipe dedicada de monitores altamente qualificados. Eles são responsáveis por supervisionar e orientar as atividades do clube, garantindo que todas as crianças estejam em um ambiente seguro.
+            </div>
+          </div>
+
+          
+
+          <p>
+            <button class="campo-freq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+              O que exatamente é o clube de ciencias?
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample5">
+            <div class="card card-body">
+              É um espaço onde os participantes podem aprender sobre diversos conceitos científicos, realizar experimentos práticos, participar de projetos de pesquisa e desenvolver habilidades científicas.
+            </div>
+          </div>
+
+          <p>
+            <button class="campo-freq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+              Meu filho precisa ter conhecimentos prévios?
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample6">
+            <div class="card card-body">
+              Não é necessário que o filho tenha conhecimentos prévios para participar do Clube de Ciências do Biopark. Nosso clube é projetado para acolher crianças e adolescentes de diversas faixas etárias e níveis de conhecimento científico.
+            </div>
+          </div>
+
+          <p>
+            <button class="campo-freq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample">
+              Qual o critério de seleção para ingressar?
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample7">
+            <div class="card card-body">
+              O critério de seleção para participar do Clube de Ciências do Biopark pode variar dependendo de diversos fatores, como a capacidade de atendimento do clube, faixa etária dos participantes, disponibilidade de vagas e outros requisitos específicos estabelecidos pela instituição.
+            </div>
+          </div>
