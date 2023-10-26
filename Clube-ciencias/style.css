@@ -280,6 +280,7 @@ p{
     font-family: 'Inter', sans-serif;
 
 }
+
 .card-img-reverse{
     width: 80%;
     display: flex;
@@ -313,10 +314,7 @@ p{
     flex-direction: row-reverse;
 }
 
-.stacked-image{
-    display: flex;
-    flex-direction: column;
-}
+
 
 /* vantagens */
 .conteudo-vantagens{
@@ -604,7 +602,7 @@ table.blueTable {
 }
 
 .profs>img{
-    border-radius: 50%;
+    border-radius: 100%;
 }
 #nome {
     padding-top: 20px;

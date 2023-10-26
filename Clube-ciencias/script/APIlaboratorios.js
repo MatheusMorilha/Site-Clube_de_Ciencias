@@ -21,7 +21,7 @@ async function APRESENTAR() {
         criarDivCard.className = "card";
 
         if (i % 2 !== 0) {
-        criarDivCard.classList.add("reverse");
+            criarDivCard.classList.add("reverse");
         }
 
         const criarDivTextos = document.createElement("div");
@@ -36,31 +36,36 @@ async function APRESENTAR() {
         criarDescricao.innerText = laboratorios.descricao;
 
         const criarDivImagens = document.createElement("div");
-        criarDivImagens.className = "card-img"; 
+        criarDivImagens.className = "card-img";
 
         
+        const divImagemGrande = document.createElement("div");
+        divImagemGrande.className = "large-image-container";
 
-        for (let j = 0; j < laboratorios.imagem.length; j++) {
+        const imagemGrande = document.createElement("img");
+        imagemGrande.src = laboratorios.imagem[0];
+        imagemGrande.style.width = "500px";
+        imagemGrande.style.height = "300px";
+
+        divImagemGrande.appendChild(imagemGrande);
+        criarDivImagens.appendChild(divImagemGrande);
+
+        
+        const divImagensMenores = document.createElement("div");
+        divImagensMenores.className = "small-images-container";
+
+        for (let j = 1; j < laboratorios.imagem.length; j++) {
             const imagemUrl = laboratorios.imagem[j];
             const criarImagem = document.createElement("img");
-        
-            if (j === 0) {
-                criarImagem.src = imagemUrl;
-                criarImagem.style.width = "500px";
-                criarImagem.style.height = "300px";
-            } else {
-                criarImagem.src = imagemUrl;
-                criarImagem.style.width = "250px";
-                criarImagem.style.height = "300";
-            }
-        
-            criarDivImagens.appendChild(criarImagem);
-        
-            if (j >= laboratorios.imagem.length - 2) {
-                criarImagem.classList.add("stacked-image");
-            }
+
+            criarImagem.src = imagemUrl;
+            criarImagem.style.width = "200px";
+            criarImagem.style.height = "150px";
+
+            divImagensMenores.appendChild(criarImagem);
         }
-        
+
+        criarDivImagens.appendChild(divImagensMenores);
 
         criarDivTextos.appendChild(criarTitulo);
         criarDivTextos.appendChild(criarDescricao);
