@@ -9,14 +9,18 @@
       rel="stylesheet" />
     <title>Top-Premios</title>
 
-    <!-- Adicionar o Favicon -->
+    <!-- Adicionado o Favicon -->
 
-    <link rel="stylesheet" type="text/css" href="img-premios/stars/stars.css" />
+    <link rel="shortcut icon" href="img/fguetee.png" type="image/x-icon" />
+    
+    
 
     <!-- Foi colocado em um documento separado o CSS -->
     <link rel="stylesheet" type="text/css" href="img-premios/premios.css" />
 
+    <!-- Código abaixo comentado da versão estática. -->
     <!-- <style>
+      
         *{
             margin: 0px;
             padding: 0px;
@@ -99,7 +103,10 @@
       <a href="index.html#vantagens"> <- Voltar</a>
     </div>
 
-    <div class="div-premios">
+    <!-- <div class="div-premios">     -->
+      <div class="div-premios" id="div-premios"></div>
+      
+<!--       
       <div class="premios">
         <img src="img-premios/iasp.png" alt="" />
         <h1>Prêmio-01</h1>
@@ -107,8 +114,9 @@
           Premie-01 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae
           placeat
-        </p>
-        <div class="rating">
+        </p> -->
+
+       <!--  <div class="rating">
           <span class="star1" data-rating="1">&#9733;</span>
           <span class="star1" data-rating="2">&#9733;</span>
           <span class="star1" data-rating="3">&#9733;</span>
@@ -117,6 +125,8 @@
         </div>
         <p>Classificação: <span id="rating-value1">0</span>/5</p>
       </div>
+
+
       <div class="premios">
         <img src="img-premios/medalha.png" alt="" />
         <h1>Prêmio-02</h1>
@@ -284,9 +294,10 @@
           <span class="star10" data-rating="5">&#9733;</span>
         </div>
         <p>Classificação: <span id="rating-value10">0</span>/5</p>
-      </div>
+      </div> -->
       <!-- Acrescentar as estrelas / acrescentar os comentários -->
     </div>
     <script src="img-premios/stars/stars.js"></script>
+    <script src="script/APILista_premios.js"></script>
   </body>
 </html>

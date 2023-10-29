@@ -1,280 +1,375 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clube de Ciências</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/fguetee.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
+    <link rel="shortcut icon" href="img/fguetee.png" type="image/x-icon" />
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css-responsivo/navbar-responsiva.css">
-    <link rel="stylesheet" href="css-responsivo/media-1179px.css">
-    <link rel="stylesheet" href="css-responsivo/media-999px.css">
-    <link rel="stylesheet" href="css-responsivo/media-765px.css">
-    <link rel="stylesheet" href="css-responsivo/media-700px.css">
-    <link rel="stylesheet" href="css-responsivo/media-640px.css">
-    <link rel="stylesheet" href="css-responsivo/media-426px.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css-responsivo/navbar-responsiva.css" />
+    <link rel="stylesheet" href="css-responsivo/media-1179px.css" />
+    <link rel="stylesheet" href="css-responsivo/media-999px.css" />
+    <link rel="stylesheet" href="css-responsivo/media-765px.css" />
+    <link rel="stylesheet" href="css-responsivo/media-700px.css" />
+    <link rel="stylesheet" href="css-responsivo/media-640px.css" />
+    <link rel="stylesheet" href="css-responsivo/media-426px.css" />
     <!-- --------- -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d962411a6f.js" crossorigin="anonymous"></script>    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/d962411a6f.js"
+      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</head>
-<body>  
-  <!-- pagina inicial -->
-  <section class="header">
-    <picture>
-      <source media="(max-width: 500px)" srcset="img/Galax-tablet.png">
-      <img src="img/Galax.png" class="galax">
-    </picture>
-    <div class="caixa-de-texto" id="smooth">
-      <div>
-      <h1><span class="cld">Clube de</span><br> Ciências<br><span class="txt-cien">BIOPARK</span></h1>
-      </div>
-      <a href="#pagina2a" class="primeiro-botao">Conheça já</a>
-    </div>
-  </section>
-  <!-- navbar -->
-  <nav>
-    <div class="mobile-menu">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-    <ul class="nav-list" id="smooth">
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#laboratorios">Laboratórios</a></li>
-      <li><a href="#vantagens">Vantagens</a></li>
-      <li><a href="#comosurgiu">História</a></li>
-      <li><a href="#equipe">Equipe</a></li>
-      <li><a href="premios.html">Prêmios</a></li>
-      <li><a href="noticias.html">Notícias</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-
-  <!-- pagina dois -->
-  <section id="pagina2">
-    <a id="pagina2a"></a>
-    <div class="vantagens">
-      <h2>O início<br> de um futuro<br> brilhante</h2>
-      <div  id="smooth">
-          <p>Saiba <br> mais em:</p>
-          <a href="#vantagens" class="botao-vantagens">Vantagens</a>
-      </div>
-    </div>
-      
-    <picture class="menino-cientista">
-      <source media="(max-width: 460px)" srcset="img/image-mobile.png">
-      <source media="(max-width: 590px)" srcset="img/image-mobile1.png">
-      <source media="(max-width: 1000px)" srcset="img/image-tablet.png">  
-      <img class="imagem" src="img/image.png" alt="menino-cientista">
-    </picture>
-  </section>
-
-  <!-- o que e o clube -->
-  <section id="sobre">
-    <div class="divisoria-laranja" class="row align-items-center">
-      <p>O que é o clube</p>
-    </div>
-    <div class="sobre-conteudo">
-      <p>
-        O Clube de Ciências do Biopark é um ambiente seguro e estimulante
-        para que as crianças e adolescentes possam explorar o mundo da ciência 
-        de forma criativa e divertida. As atividades oferecidas pelo Clube de Ciências são cuidadosamente planejadas para despertar a curiosidade e o interesse dos participantes. Através de experimentos práticos, projetos interativos e desafios estimulantes, as crianças e adolescentes têm a oportunidade de mergulhar em diferentes áreas científicas, como biologia, química, robotica e programação.
-      </p>
+  </head>
+  <body>
+    <!-- pagina inicial -->
+    <section class="header">
       <picture>
-        <source media="(max-width: 765px)" srcset="img/oqe-mobile.png">
-        <img class="img-cont" src="img/oqe.svg" alt="simbolos da ciencia">
+        <source media="(max-width: 500px)" srcset="img/Galax-tablet.png" />
+        <img src="img/Galax.png" class="galax" />
       </picture>
-    </div>
-  </section>
+      <div class="caixa-de-texto" id="smooth">
+        <div>
+          <h1>
+            <span class="cld">Clube de</span><br />
+            Ciências<br /><span class="txt-cien">BIOPARK</span>
+          </h1>
+        </div>
+        <a href="#pagina2a" class="primeiro-botao">Conheça já</a>
+      </div>
+    </section>
+    <!-- navbar -->
+    <nav>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list" id="smooth">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#laboratorios">Laboratórios</a></li>
+        <li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#comosurgiu">História</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="premios.html">Prêmios</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
 
-  <!-- laboratorios -->
-  <section id="laboratorios">
-    <div class="divisoria-laranja" class="row align-items-center">
-      <p>Laboratórios</p>
-    </div>
-    <div class="cards">
-      
-    </div>
-  </section>
+    <!-- pagina dois -->
+    <section id="pagina2">
+      <a id="pagina2a"></a>
+      <div class="vantagens">
+        <h2>
+          O início<br />
+          de um futuro<br />
+          brilhante
+        </h2>
+        <div id="smooth">
+          <p>
+            Saiba <br />
+            mais em:
+          </p>
+          <a href="#vantagens" class="botao-vantagens">Vantagens</a>
+        </div>
+      </div>
 
+      <picture class="menino-cientista">
+        <source media="(max-width: 460px)" srcset="img/image-mobile.png" />
+        <source media="(max-width: 590px)" srcset="img/image-mobile1.png" />
+        <source media="(max-width: 1000px)" srcset="img/image-tablet.png" />
+        <img class="imagem" src="img/image.png" alt="menino-cientista" />
+      </picture>
+    </section>
 
-  <!-- Sessão Vantagens -->
-  <section id="vantagens">
-    <div class="divisoria-laranja" class="row align-items-center">
-      <p>Vantagens</p>
-    </div>
-
-    <div class="conteudo-vantagens">
-      <div class="box1">
+    <!-- o que e o clube -->
+    <section id="sobre">
+      <div class="divisoria-laranja" class="row align-items-center">
+        <p>O que é o clube</p>
+      </div>
+      <div class="sobre-conteudo">
+        <p>
+          O Clube de Ciências do Biopark é um ambiente seguro e estimulante para
+          que as crianças e adolescentes possam explorar o mundo da ciência de
+          forma criativa e divertida. As atividades oferecidas pelo Clube de
+          Ciências são cuidadosamente planejadas para despertar a curiosidade e
+          o interesse dos participantes. Através de experimentos práticos,
+          projetos interativos e desafios estimulantes, as crianças e
+          adolescentes têm a oportunidade de mergulhar em diferentes áreas
+          científicas, como biologia, química, robotica e programação.
+        </p>
         <picture>
-          <source media="(max-width: 500px)" srcset="img/img-vantagens-mobile.png">
-          <img class="comosurgiu-img" src="img/img-vantagens.png" alt="parede com logo do clube">
+          <source media="(max-width: 765px)" srcset="img/oqe-mobile.png" />
+          <img class="img-cont" src="img/oqe.svg" alt="simbolos da ciencia" />
         </picture>
-        <div class="linha">
-          <div class="caixa_maior">
-            <div class="caixa1">
-              <div class="quadrado1">
-                <h3>Método</h3>
-                <p class="vant-txt">A metodologia de ensino ativa do clube coloca os membros no centro do processo de aprendizagem, estimulando a exploração, experimentação e descoberta de conceitos científicos através de atividades práticas e divertidas. Isso permite que os membros sejam protagonistas do seu próprio processo de aprendizagem</p>
+      </div>
+    </section>
+
+    <!-- laboratorios -->
+    <section id="laboratorios">
+      <div class="divisoria-laranja" class="row align-items-center">
+        <p>Laboratórios</p>
+      </div>
+      <div class="cards"></div>
+    </section>
+
+    <!-- Sessão Vantagens -->
+    <section id="vantagens">
+      <div class="divisoria-laranja" class="row align-items-center">
+        <p>Vantagens</p>
+      </div>
+
+      <div class="conteudo-vantagens">
+        <div class="box1">
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="img/img-vantagens-mobile.png" />
+            <img
+              class="comosurgiu-img"
+              src="img/img-vantagens.png"
+              alt="parede com logo do clube" />
+          </picture>
+          <div class="linha">
+            <div class="caixa_maior">
+              <div class="caixa1">
+                <div class="quadrado1">
+                  <h3>Método</h3>
+                  <p class="vant-txt">
+                    A metodologia de ensino ativa do clube coloca os membros no
+                    centro do processo de aprendizagem, estimulando a
+                    exploração, experimentação e descoberta de conceitos
+                    científicos através de atividades práticas e divertidas.
+                    Isso permite que os membros sejam protagonistas do seu
+                    próprio processo de aprendizagem
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="caixa2">
-              <div class="quadrado2">
-                <h3>Certificados</h3>
-                <p class="vant-txt">Destacando suas conquistas e participação nas atividades do clube os certificados representam não apenas um reconhecimento formal, mas também servem como um lembrete tangível de todo o aprendizado</p>
+              <div class="caixa2">
+                <div class="quadrado2">
+                  <h3>Certificados</h3>
+                  <p class="vant-txt">
+                    Destacando suas conquistas e participação nas atividades do
+                    clube os certificados representam não apenas um
+                    reconhecimento formal, mas também servem como um lembrete
+                    tangível de todo o aprendizado
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="caixa3">
-              <div class="quadrado3">
-                <h3>Prêmios</h3>
-                <p class="vant-txt"> Os prêmios recebidos em competições são um testemunho do comprometimento e do talento dos alunos e da equipe do clube, destacando a excelência científica e motivando-os a alcançar ainda mais sucesso no futuro..</p>
-                <div class="botao_saiba_mais">
-                  <a href="premios.html"><input type="button" value="Saiba Mais"></a>
+              <div class="caixa3">
+                <div class="quadrado3">
+                  <h3>Prêmios</h3>
+                  <p class="vant-txt">
+                    Os prêmios recebidos em competições são um testemunho do
+                    comprometimento e do talento dos alunos e da equipe do
+                    clube, destacando a excelência científica e motivando-os a
+                    alcançar ainda mais sucesso no futuro..
+                  </p>
+                  <div class="botao_saiba_mais">
+                    <a href="premios.html"
+                      ><input type="button" value="Saiba Mais"
+                    /></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="clubes">
-        <div class="caixa_fundo"> 
-          <div class="identificador">
-            <p>Pré Clube</p>
-          </div>
-          <div class="caixa_maior_baixo">
-            
-            <img id="imgPreClube" alt="">
-          
-            <div class="caixa_texto_vantagens">
-              <h3>Descrição</h3>
-              <p class="desc-cl" id="descPreClube"></p>
+        <div class="clubes">
+          <div class="caixa_fundo">
+            <div class="identificador">
+              <p>Pré Clube</p>
             </div>
-            <div class="caixa_texto_vantagens">
+            <div class="caixa_maior_baixo">
+              <img id="imgPreClube" alt="" />
+
+              <div class="caixa_texto_vantagens">
+                <h3>Descrição</h3>
+                <p class="desc-cl" id="descPreClube"></p>
+              </div>
+              <div class="caixa_texto_vantagens">
                 <h3>Horários</h3>
                 <div class="caixa_horarios">
                   <table class="blueTable">
                     <thead>
                       <tr>
-                        <th colspan="2" id="faixa_idadePreClube">4-8 ANOS[dinamico</th>
+                        <th colspan="2" id="faixa_idadePreClube">
+                          4-8 ANOS[dinamico
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td class="turno turno_preclube">TURNO MANHÃ:</td>
-                        <td class="turno turno_preclube" id="turno_manhaPreClube">8H30 à 12H[dinamico</td>
+                        <td
+                          class="turno turno_preclube"
+                          id="turno_manhaPreClube">
+                          8H30 à 12H[dinamico
+                        </td>
                       </tr>
                       <tr>
                         <td class="turno turno_preclube">TURNO TARDE:</td>
-                        <td class="turno turno_preclube" id="turno_tardePreClube">14 ÁS 17H30[dinamico</td>  
+                        <td
+                          class="turno turno_preclube"
+                          id="turno_tardePreClube">
+                          14 ÁS 17H30[dinamico
+                        </td>
                       </tr>
                       <tr>
                         <td id="dia_semanaPreClube1">QUARTA-FEIRA[dinamico</td>
-                        <td id="turmaPreClube1"><span>CRIANÇAS DE 4 E 5 ANOS DE IDADE[dinamico</span></td>
+                        <td id="turmaPreClube1">
+                          <span>CRIANÇAS DE 4 E 5 ANOS DE IDADE[dinamico</span>
+                        </td>
                       </tr>
                       <tr>
                         <td id="dia_semanaPreClube2">SEXTA-FEIRA[dinamico</td>
-                        <td id="turmaPreClube2"><span>CRIANÇAS DE 6 A 8 ANOS DE IDADE[dinamico</span></td>
+                        <td id="turmaPreClube2">
+                          <span>CRIANÇAS DE 6 A 8 ANOS DE IDADE[dinamico</span>
+                        </td>
                       </tr>
-                    </tbody>
-                  </table>
-                </div>
-            </div>      
-          </div>
-        </div>
-
-        <div class="caixa_fundo"> 
-          <div class="identificador">
-            <p>Clube</p>
-          </div>
-          <div class="caixa_maior_baixo">
-            <img id="imgClube" alt="">
-            <div class="caixa_texto_vantagens">
-              <h3>Descrição</h3>
-              <p class="desc-cl" id="descClube"></p>
-              <div class="caixa_texto_vantagens">
-                <h3>Horários</h3>
-                <div class="caixa_horarios">
-                  <table class="blueTable" id="tabela_horariosClube">
-                    <thead>
-                      <tr>
-                        <th colspan="2" class="amarelo" id="faixa_idadeClube"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="turno turno_clube">TURNO MANHÃ:</td>
-                        <td class="turno turno_clube" id="turno_manhaClube"></td>
-                      </tr>
-                      <tr>
-                        <td class="turno turno_clube">TURNO TARDE:</td>
-                        <td class="turno turno_clube" id="turno_tardeClube"></td>
-                      </tr>                     
                     </tbody>
                   </table>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="caixa_fundo">
+            <div class="identificador">
+              <p>Clube</p>
+            </div>
+            <div class="caixa_maior_baixo">
+              <img id="imgClube" alt="" />
+              <div class="caixa_texto_vantagens">
+                <h3>Descrição</h3>
+                <p class="desc-cl" id="descClube"></p>
+                <div class="caixa_texto_vantagens">
+                  <h3>Horários</h3>
+                  <div class="caixa_horarios">
+                    <table class="blueTable" id="tabela_horariosClube">
+                      <thead>
+                        <tr>
+                          <th
+                            colspan="2"
+                            class="amarelo"
+                            id="faixa_idadeClube"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="turno turno_clube">TURNO MANHÃ:</td>
+                          <td
+                            class="turno turno_clube"
+                            id="turno_manhaClube"></td>
+                        </tr>
+                        <tr>
+                          <td class="turno turno_clube">TURNO TARDE:</td>
+                          <td
+                            class="turno turno_clube"
+                            id="turno_tardeClube"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="comosurgiu">
-    <div class="divisoria-laranja" class="row align-items-center">
-      <p>Como surgiu?</p>
-    </div>
-    
-    <div class="conteudo">
-      <p class="comosurgiu-txt">
-        O Clube de Ciências é um projeto que nasceu em 2018, inspirado na energia de inovação do Parque Científico e Tecnológico de Biociências (Biopark). Inicialmente, foi criado para suprir uma demanda: unir conhecimento científico com diversão. Destinado a crianças e adolescentes, o Clube de Ciências funciona em contraturno escolar e prioriza valorizar a curiosidade, despertar o amor pela ciência e, consequentemente, produzir ciência.
-      </p>
-      <picture>
-        <source media="(max-width: 500px)" srcset="img/comosurgiu-mobile.jpg">
-        <img class="comosurgiu-img" src="img/comosurgiu.jpg" alt="parede com logo do clube"> 
-      </picture>   
-    </div>
-  </section>
+    <section id="comosurgiu">
+      <div class="divisoria-laranja" class="row align-items-center">
+        <p>Como surgiu?</p>
+      </div>
 
-  <!-- equipe -->
-  <section id="equipe">
-    <div class="divisoria-laranja" class="row align-items-center">
-      <p>Equipe</p>
-    </div>
-    <div id = "sep"> 
-      <!-- API EQUIPE -->
-    </div>
-  </section>
-  
-  <!-- rodape -->
-  <footer>
-    <div class="footercont">
-      <div id="contato">
-        <form>
-          <p>INSCRIÇÕES ABERTAS!</p>
-          
+      <div class="conteudo">
+        <p class="comosurgiu-txt">
+          O Clube de Ciências é um projeto que nasceu em 2018, inspirado na
+          energia de inovação do Parque Científico e Tecnológico de Biociências
+          (Biopark). Inicialmente, foi criado para suprir uma demanda: unir
+          conhecimento científico com diversão. Destinado a crianças e
+          adolescentes, o Clube de Ciências funciona em contraturno escolar e
+          prioriza valorizar a curiosidade, despertar o amor pela ciência e,
+          consequentemente, produzir ciência.
+        </p>
+        <picture>
+          <source
+            media="(max-width: 500px)"
+            srcset="img/comosurgiu-mobile.jpg" />
+          <img
+            class="comosurgiu-img"
+            src="img/comosurgiu.jpg"
+            alt="parede com logo do clube" />
+        </picture>
+      </div>
+    </section>
+
+    <!-- equipe -->
+    <section id="equipe">
+      <div class="divisoria-laranja" class="row align-items-center">
+        <p>Equipe</p>
+      </div>
+      <div id="sep">
+        <!-- API EQUIPE -->
+      </div>
+    </section>
+
+    <!-- rodape -->
+    <footer>
+      <div class="footercont">
+        <div id="contato">
+          <form>
+            <p>INSCRIÇÕES ABERTAS!</p>
+
             <div class="form-group">
               <label for="exampleInputEmail1">NOME:</label>
-              <input type="nome" class="form-control" id="Inputnome" aria-describedby="Nome" placeholder="Seu Nome">
+              <input
+                type="nome"
+                class="form-control"
+                id="Inputnome"
+                aria-describedby="Nome"
+                placeholder="Seu Nome" />
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">E-MAIL:</label>
-              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="exemplo@email.com">
+              <input
+                type="email"
+                class="form-control"
+                id="InputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="exemplo@email.com" />
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">TELEFONE:</label>
-              <input type="telefone" class="form-control" id="InputNumero" aria-describedby="Numero" placeholder="(99)99999-9999">
+              <input
+                type="telefone"
+                class="form-control"
+                id="InputNumero"
+                aria-describedby="Numero"
+                placeholder="(99)99999-9999" />
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">IDADE DO ALUNO:</label>
-              <input type="idade" class="form-control" id="InputIdade" aria-describedby="Idade" placeholder="Idade do Aluno">
+              <input
+                type="idade"
+                class="form-control"
+                id="InputIdade"
+                aria-describedby="Idade"
+                placeholder="Idade do Aluno" />
             </div>
             <label>Como chegou até nós?</label>
             <select class="custom-select">
@@ -285,47 +380,44 @@
               <option value="4">Google</option>
               <option value="3">Facebook</option>
             </select>
-            <button type="button" onclick="enviar()" class="botao-enviar">Enviar</button>
-        </form>
-      </div>
+            <button type="button" onclick="enviar()" class="botao-enviar">
+              Enviar
+            </button>
+          </form>
+        </div>
 
-      <span id="backtotop-btn">
-        <span class="rocket">🚀</span>
-      </span>
+        <span id="backtotop-btn">
+          <span class="rocket">🚀</span>
+        </span>
 
-      <div class="perguntas-frequentes">
-        <div class="frequente">
-          <p>DÚVIDAS FREQUENTES:</p>
-          <!----------------------->
-          <div id="duvidasContainer"></div>
-
-        
+        <div class="perguntas-frequentes">
+          <div class="frequente">
+            <p>DÚVIDAS FREQUENTES:</p>
+            <!----------------------->
+            <div id="duvidasContainer"></div>
+          </div>
         </div>
       </div>
-    </div>
-    
-  </footer>
+    </footer>
 
-  <!-- scripts -->
-  <script>
-    function enviar() {
-      Swal.fire(
-    'Bom trabalho!',
-    'Formulário enviado!',
-    'success'
-  )
-  }
-  </script>
-  <script src="script/APIduvida.js"></script>
-  <script src="script/APIclube.js"></script>
-  <script src="script/APIlaboratorios.js"></script>
-  <script src="script/APIequipe.js"></script>
-  <script src="https://kit.fontawesome.com/d962411a6f.js" crossorigin="anonymous"></script>  
-  
-  <script src="script/scrollbehavior.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
-  <script src="script/mobile.js"></script>
-</body>
+    <!-- scripts -->
+    <script>
+      function enviar() {
+        Swal.fire("Bom trabalho!", "Formulário enviado!", "success");
+      }
+    </script>
+    <script src="script/APIduvida.js"></script>
+    <script src="script/APIclube.js"></script>
+    <script src="script/APIlaboratorios.js"></script>
+    <script src="script/APIequipe.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d962411a6f.js"
+      crossorigin="anonymous"></script>
+    <script src="script/scrollbehavior.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+    <script src="script/mobile.js"></script>
+  </body>
 </html>
