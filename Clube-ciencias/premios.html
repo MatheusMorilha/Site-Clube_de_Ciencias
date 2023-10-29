@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
-    <title>Noticias</title>
-    <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet" />
+    <title>Top-Premios</title>
+
+    <!-- Adicionado o Favicon -->
+
+    <link rel="shortcut icon" href="img/fguetee.png" type="image/x-icon" />
+    
+    
+
+    <!-- Foi colocado em um documento separado o CSS -->
+    <link rel="stylesheet" type="text/css" href="img-premios/premios.css" />
+
+    <!-- Código abaixo comentado da versão estática. -->
+    <!-- <style>
+      
         *{
             margin: 0px;
             padding: 0px;
@@ -79,42 +93,211 @@
             font-size: 15px;
             padding: 10px;
         }
-    </style>
-</head>
-<body>
+    </style> -->
+  </head>
+  <body>
     <div class="divisoria-laranja">
-        <h1>Premios</h1>
+      <h1>Melhores Premios</h1>
     </div>
-        <div class="voltar">
-        <a  href="index.html#vantagens"> <- Voltar</a>  
+    <div class="voltar">
+      <a href="index.html#vantagens"> <- Voltar</a>
     </div>
 
-    <div class="div-premios">
-        <div class="premios" >
-            <img src="img-premios/fecite
-            c.png" alt="">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae placeat excepturi corrupti odit eveniet voluptates sint, nostrum nam possimus minus cumque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam officiis omnis, molestiae repellendus necessitatibus sit ipsum modi harum dolor deserunt eveniet natus porro at, incidunt, in animi numquam consequatur? </p>
+    <!-- <div class="div-premios">     -->
+      <div class="div-premios" id="div-premios"></div>
+      
+<!--       
+      <div class="premios">
+        <img src="img-premios/iasp.png" alt="" />
+        <h1>Prêmio-01</h1>
+        <p>
+          Premie-01 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae
+          placeat
+        </p> -->
+
+       <!--  <div class="rating">
+          <span class="star1" data-rating="1">&#9733;</span>
+          <span class="star1" data-rating="2">&#9733;</span>
+          <span class="star1" data-rating="3">&#9733;</span>
+          <span class="star1" data-rating="4">&#9733;</span>
+          <span class="star1" data-rating="5">&#9733;</span>
         </div>
-        <div class="premios" >
-            <img src="img-premios/iasp.png" alt="">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae placeat excepturi corrupti odit eveniet voluptates sint, nostrum nam possimus minus cumque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam officiis omnis, molestiae repellendus necessitatibus sit ipsum modi harum dolor deserunt eveniet natus porro at, incidunt, in animi numquam consequatur? </p>
+        <p>Classificação: <span id="rating-value1">0</span>/5</p>
+      </div>
+
+
+      <div class="premios">
+        <img src="img-premios/medalha.png" alt="" />
+        <h1>Prêmio-02</h1>
+        <p>
+          Premie-02 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae
+          placeat
+        </p>
+        <div class="rating">
+          <span class="star2" data-rating="1">&#9733;</span>
+          <span class="star2" data-rating="2">&#9733;</span>
+          <span class="star2" data-rating="3">&#9733;</span>
+          <span class="star2" data-rating="4">&#9733;</span>
+          <span class="star2" data-rating="5">&#9733;</span>
         </div>
-        <div class="premios" >
-            <img src="img-premios/medalha.png" alt="">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae placeat excepturi corrupti odit eveniet voluptates sint, nostrum nam possimus minus cumque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam officiis omnis, molestiae repellendus necessitatibus sit ipsum modi harum dolor deserunt eveniet natus porro at, incidunt, in animi numquam consequatur? </p>
+        <p>Classificação: <span id="rating-value2">0</span>/5</p>
+      </div>
+      <div class="premios">
+        <img src="img-premios/robotica.png" alt="" />
+        <h1>Prêmio-03</h1>
+        <p>
+          Premie-03 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae
+          placeat
+        </p>
+        <div class="rating">
+          <span class="star3" data-rating="1">&#9733;</span>
+          <span class="star3" data-rating="2">&#9733;</span>
+          <span class="star3" data-rating="3">&#9733;</span>
+          <span class="star3" data-rating="4">&#9733;</span>
+          <span class="star3" data-rating="5">&#9733;</span>
         </div>
-        <div class="premios" >
-            <img src="img-premios/robotica.png" alt="">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae placeat excepturi corrupti odit eveniet voluptates sint, nostrum nam possimus minus cumque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam officiis omnis, molestiae repellendus necessitatibus sit ipsum modi harum dolor deserunt eveniet natus porro at, incidunt, in animi numquam consequatur? </p>
+        <p>Classificação: <span id="rating-value3">0</span>/5</p>
+      </div>
+      <div class="premios">
+        <img src="img-premios/iasp.png" alt="" />
+        <h1>Prêmio-04</h1>
+        <p>
+          Premie-04 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae
+          placeat
+        </p>
+        <div class="rating">
+          <span class="star4" data-rating="1">&#9733;</span>
+          <span class="star4" data-rating="2">&#9733;</span>
+          <span class="star4" data-rating="3">&#9733;</span>
+          <span class="star4" data-rating="4">&#9733;</span>
+          <span class="star4" data-rating="5">&#9733;</span>
         </div>
-        <div class="premios" >
-            <img src="img-premios/iasp.png" alt="">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae placeat excepturi corrupti odit eveniet voluptates sint, nostrum nam possimus minus cumque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam officiis omnis, molestiae repellendus necessitatibus sit ipsum modi harum dolor deserunt eveniet natus porro at, incidunt, in animi numquam consequatur? </p>
+        <p>Classificação: <span id="rating-value4">0</span>/5</p>
+      </div>
+      <div class="premios">
+        <img src="img-premios/fecitec.png" alt="" />
+        <h1>Prêmio-05</h1>
+        <p>
+          Premie-05 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae
+          placeat
+        </p>
+        <div class="rating">
+          <span class="star5" data-rating="1">&#9733;</span>
+          <span class="star5" data-rating="2">&#9733;</span>
+          <span class="star5" data-rating="3">&#9733;</span>
+          <span class="star5" data-rating="4">&#9733;</span>
+          <span class="star5" data-rating="5">&#9733;</span>
         </div>
-        <div class="premios" >
-            <img src="img-premios/fecitec.png" alt="">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae placeat excepturi corrupti odit eveniet voluptates sint, nostrum nam possimus minus cumque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam officiis omnis, molestiae repellendus necessitatibus sit ipsum modi harum dolor deserunt eveniet natus porro at, incidunt, in animi numquam consequatur? </p>
+        <p>Classificação: <span id="rating-value5">0</span>/5</p>
+      </div>
+      <div class="premios">
+        <img
+          src="img-premios/fecite
+            c.png"
+          alt="" />
+        <h1>Prêmio-06</h1>
+          <p>
+          Premie-06 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae
+          placeat
+        </p>
+        <div class="rating">
+          <span class="star6" data-rating="1">&#9733;</span>
+          <span class="star6" data-rating="2">&#9733;</span>
+          <span class="star6" data-rating="3">&#9733;</span>
+          <span class="star6" data-rating="4">&#9733;</span>
+          <span class="star6" data-rating="5">&#9733;</span>
         </div>
+        <p>Classificação: <span id="rating-value6">0</span>/5</p>
+      </div>
+      <div class="premios">
+        <img
+          src="img-premios/fecite
+            c.png"
+          alt="" />
+        <h1>Prêmio-07</h1>
+          <p>
+          Premie-07 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae
+          placeat
+        </p>
+        <div class="rating">
+          <span class="star7" data-rating="1">&#9733;</span>
+          <span class="star7" data-rating="2">&#9733;</span>
+          <span class="star7" data-rating="3">&#9733;</span>
+          <span class="star7" data-rating="4">&#9733;</span>
+          <span class="star7" data-rating="5">&#9733;</span>
+        </div>
+        <p>Classificação: <span id="rating-value7">0</span>/5</p>
+      </div>
+      <div class="premios">
+        <img
+          src="img-premios/fecite
+            c.png"
+          alt="" />
+        <h1>Prêmio-08</h1>
+          <p>
+          Premie-08 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae
+          placeat
+        </p>
+        <div class="rating">
+          <span class="star8" data-rating="1">&#9733;</span>
+          <span class="star8" data-rating="2">&#9733;</span>
+          <span class="star8" data-rating="3">&#9733;</span>
+          <span class="star8" data-rating="4">&#9733;</span>
+          <span class="star8" data-rating="5">&#9733;</span>
+        </div>
+        <p>Classificação: <span id="rating-value8">0</span>/5</p>
+      </div>
+      <div class="premios">
+        <img
+          src="img-premios/fecite
+            c.png"
+          alt="" />
+        <h1>Prêmio-09</h1>
+          <p>
+          Premie-09 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae
+          placeat
+        </p>
+        <div class="rating">
+          <span class="star9" data-rating="1">&#9733;</span>
+          <span class="star9" data-rating="2">&#9733;</span>
+          <span class="star9" data-rating="3">&#9733;</span>
+          <span class="star9" data-rating="4">&#9733;</span>
+          <span class="star9" data-rating="5">&#9733;</span>
+        </div>
+        <p>Classificação: <span id="rating-value9">0</span>/5</p>
+      </div>
+      <div class="premios">
+        <img
+          src="img-premios/fecite
+            c.png"
+          alt="" />
+        <h1>Prêmio-10</h1>
+          <p>
+          Premie-10Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi, rem ullam commodi quod consequatur laudantium dolores eum vitae
+          placeat
+        </p>
+        <div class="rating">
+          <span class="star10" data-rating="1">&#9733;</span>
+          <span class="star10" data-rating="2">&#9733;</span>
+          <span class="star10" data-rating="3">&#9733;</span>
+          <span class="star10" data-rating="4">&#9733;</span>
+          <span class="star10" data-rating="5">&#9733;</span>
+        </div>
+        <p>Classificação: <span id="rating-value10">0</span>/5</p>
+      </div> -->
+      <!-- Acrescentar as estrelas / acrescentar os comentários -->
     </div>
-</body>
+    
+    <script src="script/APILista_premios.js"></script>   
+  </body>
 </html>

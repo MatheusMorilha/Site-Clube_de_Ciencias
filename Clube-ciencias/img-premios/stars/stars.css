@@ -1,0 +1,19 @@
+.star {    
+    cursor: pointer;
+}
+
+.rating {   
+    margin-left: 10px;
+    
+    font-size: 34px;    
+    
+}
+
+.rating span {
+    color: #ccc;
+  }
+  
+  .rating .selected {
+    color: #f39c12;
+  }
+  
