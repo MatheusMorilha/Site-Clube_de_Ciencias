@@ -66,25 +66,7 @@ async function Lista_premios() {
             Document.appendChild(criarDivPremio);
 
 
-            // function Stars(starSelector, ratingValueId) {
-            //     const stars = document.querySelectorAll(starSelector);
-            //     const ratingValue = document.getElementById(ratingValueId);
-
-            //     stars.forEach((star) => {
-            //         star.addEventListener("click", function () {
-            //             const rating = parseInt(star.getAttribute("data-rating"));
-            //             ratingValue.innerText = rating;
-            //             stars.forEach((s) => {
-            //                 const sRating = parseInt(s.getAttribute("data-rating"));
-            //                 if (sRating <= rating) {
-            //                     s.classList.add("selected");
-            //                 } else {
-            //                     s.classList.remove("selected");
-            //                 }
-            //             });
-            //         });
-            //     });
-            // }
+        
 
         }
     } catch (error) {
