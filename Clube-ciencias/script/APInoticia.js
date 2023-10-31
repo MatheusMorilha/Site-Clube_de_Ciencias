@@ -47,7 +47,7 @@ async function Noticias() {
         img.alt = "";
         img.src = noticia.imagem + "?h=600&w=600";
 
-
+        
         txtDiv.appendChild(dataP);
 
         picture.appendChild(img);
