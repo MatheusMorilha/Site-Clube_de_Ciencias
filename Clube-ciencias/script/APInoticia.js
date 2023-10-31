@@ -23,9 +23,19 @@ async function Noticias() {
         subtituloP.classList.add("subtitulo");
         subtituloP.innerText = noticia.subtitulo;
 
-        const descricaoP = document.createElement("p");
-        descricaoP.classList.add("descricao");
-        descricaoP.innerText = noticia.conteudo;
+        txtDiv.appendChild(tituloP);
+        txtDiv.appendChild(subtituloP);
+
+        var arraydesc = noticia.conteudo.split("§");
+        arraydesc.forEach(element => {
+            const descricaoP = document.createElement("p");
+            descricaoP.classList.add("descricao");
+            descricaoP.innerText = element;
+            
+            descricaoP.style.textIndent = "30px";
+            txtDiv.appendChild(descricaoP);
+        });
+
 
         const dataP = document.createElement("p");
         dataP.classList.add("descricao");
@@ -37,10 +47,7 @@ async function Noticias() {
         img.alt = "";
         img.src = noticia.imagem + "?h=600&w=600";
 
-        // Adicione os elementos ao contêiner de notícias
-        txtDiv.appendChild(tituloP);
-        txtDiv.appendChild(subtituloP);
-        txtDiv.appendChild(descricaoP);
+
         txtDiv.appendChild(dataP);
 
         picture.appendChild(img);
