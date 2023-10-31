@@ -16,7 +16,7 @@ async function Preclube(){
         console.log(resultadoAPI);
     
         document.getElementById("descPC").innerText=resultadoAPI[0].descricao
-        document.getElementById("faixa_idadePreClube").innerText = `de ${resultadoAPI[0].faixa_idade_inicio} a ${resultadoAPI[0].faixa_idade_fim} anos`;
+        document.getElementById("faixa_idadePreClube").innerText = `${resultadoAPI[0].faixa_idade_inicio} - ${resultadoAPI[0].faixa_idade_fim} ANOS`;
         document.getElementById("turno_manhaPreClube").innerText= `${resultadoAPI[0].horarios.turno_manha}  `
         document.getElementById("turno_tardePreClube").innerText= `${resultadoAPI[0].horarios.turno_tarde}  `
         document.getElementById("dia_semanaPreClube1").innerText= `${resultadoAPI[0].horarios.dias_semana[0]}  `
