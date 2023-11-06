@@ -66,7 +66,7 @@ async function carregarNoticias() {
             currentPage += itemsPerPage;
             
             if (currentPage >= respostaEmJson.result.length) {
-                // Se não houver mais notícias para carregar, oculte o botão "Carregar Mais"
+                // remove o botao carregar mais se nao precisar mais dele
                 document.getElementById("loadMoreButton").style.display = "none";
             }
         }
