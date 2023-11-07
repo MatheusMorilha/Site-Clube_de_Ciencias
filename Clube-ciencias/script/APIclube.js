@@ -26,7 +26,6 @@ async function Clube(){
         turma.innerHTML = turmas[i]
     }
     
-    console.log(respostaEmJson)
 }
 
 Clube()
