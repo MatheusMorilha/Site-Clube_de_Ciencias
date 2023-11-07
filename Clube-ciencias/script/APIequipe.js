@@ -1,4 +1,5 @@
 async function Equipe() {
+    try{
         var resultado = await fetch("https://ko6qqthj.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type+%3D%3D+%27equipe%27%5D%7C+order%28_createdAt%C2%A0desc%29%7B%0A++nome%2C%0A++cargo%2C%0A++%22imagem%22%3Aimagem.asset-%3Eurl%0A%7D%0A", {
             method: "GET"
         });
@@ -6,11 +7,14 @@ async function Equipe() {
         var respostaEmJson = await resultado.json();
         var resultadoAPI = respostaEmJson.result;
         return resultadoAPI;
+    }catch(error){
+        console.error('Falha na busca dos dados');
+    }
     }
 
     async function APRESENTAR() {
+        try{
         var resultadoAPI = await Equipe();
-        console.log(resultadoAPI);
 
         const sep = document.getElementById("sep");
 
@@ -40,12 +44,15 @@ async function Equipe() {
             criarDivId.appendChild(criarNome);
             criarDivId.appendChild(criarCargo);
 
-            criarDivTotal.appendChild(criarDiv)
-            criarDivTotal.appendChild(criarDivId)
+            criarDivTotal.appendChild(criarDiv);
+            criarDivTotal.appendChild(criarDivId);
 
             
-            sep.appendChild(criarDivTotal)
+            sep.appendChild(criarDivTotal);
         }
+        }catch(error){
+        console.error('Falha na busca dos dados');
+    }
     }
 
     APRESENTAR();

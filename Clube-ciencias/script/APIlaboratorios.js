@@ -1,4 +1,5 @@
 async function Laboratorios() {
+    try{
     var resultado = await fetch("https://ko6qqthj.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type+%3D%3D+%27laboratorios%27%5D+%7C+order%28_createdAt%C2%A0asc%29%7B%0A++titulo%2C%0A++descricao%2C%0A++%22imagem%22%3Aimagem%5B%5D.asset-%3Eurl%0A%7D%0A", {
         method: "GET"
     });
@@ -6,11 +7,14 @@ async function Laboratorios() {
     var respostaEmJson = await resultado.json();
     var resultadoAPI = respostaEmJson.result;
     return resultadoAPI;
+}catch(error){
+    console.error('Falha na busca dos dados');
+}
 }
 
 async function APRESENTAR() {
+    try{
     var resultadoAPI = await Laboratorios();
-    console.log(resultadoAPI);
 
     const criarDivCards = document.querySelector(".cards");
 
@@ -75,6 +79,9 @@ async function APRESENTAR() {
 
         criarDivCards.appendChild(criarDivCard);
     }
+}catch(error){
+    console.error('Falha na busca dos dados');
+}
 }
 
 APRESENTAR();

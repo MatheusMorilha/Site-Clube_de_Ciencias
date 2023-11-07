@@ -25,8 +25,8 @@ async function buscarDadosAPI(url, elementoId) {
             // Adicione o parágrafo ao elemento
             elemento.appendChild(descricaoP);
         }
-    } catch (error) {
-        console.error("Erro ao buscar dados da API:", error);
+    }catch(error){
+        console.error('Falha na busca dos dados');
     }
 }
 

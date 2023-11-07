@@ -22,9 +22,8 @@ async function Equipe() {
         });
 
         return resultadoAPI;
-    } catch (error) {
-        console.error("Erro ao buscar dados da API:", error);
-        return [];
+    }catch(error){
+        console.error('Falha na busca dos dados');
     }
 }
 
@@ -68,8 +67,8 @@ async function Lista_premios() {
         
 
         }
-    } catch (error) {
-        console.error("Erro ao criar elementos na página:", error);
+    }catch(error){
+        console.error('Falha na busca dos dados');
     }
 }
 

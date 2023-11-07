@@ -5,6 +5,7 @@ const noticiasContainer = document.getElementById("noticiasContainer");
 
 
 async function carregarNoticias() {
+    try{
     const noticias = await fetch("https://ko6qqthj.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D%22noticia%22%5D+%7C+order%28data+desc%29%7B%0A++%22id%22%3A_id%2C%0A++++titulo%2C%0A++++subtitulo%2C%0A++++conteudo%2C%0A++++%22imagem%22%3Aimagem.asset-%3Eurl%2C%0A++++data%0A%7D%0A", {
         method: "GET"
     });
@@ -69,6 +70,9 @@ async function carregarNoticias() {
                 // remove o botao carregar mais se nao precisar mais dele
                 document.getElementById("loadMoreButton").style.display = "none";
             }
+        }catch(error){
+            console.error('Falha na busca dos dados');
+        }
         }
 
         const loadMoreButton = document.createElement("button");
