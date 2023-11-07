@@ -36,7 +36,6 @@ async function Duvidas() {
         duvidasContainer.appendChild(respostaDiv);
     }
 
-    console.log(respostaEmJson);
 }
 
 Duvidas();

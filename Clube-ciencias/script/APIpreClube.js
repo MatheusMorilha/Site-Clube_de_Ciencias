@@ -13,7 +13,6 @@ async function Preclube(){
     async function Apresentar(){
     
         var resultadoAPI = await Preclube();
-        console.log(resultadoAPI);
     
         document.getElementById("descPC").innerText=resultadoAPI[0].descricao
         document.getElementById("faixa_idadePreClube").innerText = `${resultadoAPI[0].faixa_idade_inicio} - ${resultadoAPI[0].faixa_idade_fim} ANOS`;

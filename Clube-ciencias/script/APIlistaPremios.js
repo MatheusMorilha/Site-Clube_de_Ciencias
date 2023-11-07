@@ -13,7 +13,6 @@ async function Equipe() {
         let resultadoAPI = respostaEmJson.result;
 
         // Adicione mensagens de console para depuração
-        console.log("Dados brutos da API:", resultadoAPI);
 
         // Ordenar os resultados com base no número do título
         resultadoAPI.sort((a, b) => {
@@ -33,7 +32,7 @@ async function Equipe() {
 async function Lista_premios() {
     try {
         let resultadoAPI = await Equipe();
-        console.log(resultadoAPI);
+
 
         const Document = document.getElementById("div-premios");
 
