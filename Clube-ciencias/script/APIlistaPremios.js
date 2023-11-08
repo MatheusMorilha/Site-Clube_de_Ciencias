@@ -1,16 +1,16 @@
 // Função para buscar dados da API
 async function Equipe() {
     try {
-        let resultado = await fetch("https://ko6qqthj.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type+%3D%3D+%22lista_premios%22%5D+%7B%0A++_id%2C%0A++titulo%2C%0A++imagem%2C%0A++descricao%2C%0A++%22imagemUrl%22%3A+imagem.asset-%3Eurl%0A%7D%0A", {
+        let resultadoEquipe = await fetch("https://ko6qqthj.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type+%3D%3D+%22lista_premios%22%5D+%7B%0A++_id%2C%0A++titulo%2C%0A++imagem%2C%0A++descricao%2C%0A++%22imagemUrl%22%3A+imagem.asset-%3Eurl%0A%7D%0A", {
             method: "GET"
         });
 
-        if (!resultado.ok) {
-            throw Error(`Erro na solicitação: ${resultado.status}`);
+        if (!resultadoEquipe.ok) {
+            throw Error(`Erro na solicitação: ${resultadoEquipe.status}`);
         }
 
-        let respostaEmJson = await resultado.json();
-        let resultadoAPI = respostaEmJson.result;
+        let respostaEmJsonEquipeP = await resultadoEquipe.json();
+        let resultadoAPI = respostaEmJsonEquipeP.result;
 
         // Adicione mensagens de console para depuração
 
@@ -22,25 +22,25 @@ async function Equipe() {
         });
 
         return resultadoAPI;
-    }catch(error){
+    } catch (error) {
         console.error('Falha na busca dos dados');
     }
 }
 
 // Função para criar elementos na página com controle de caracteres
-async function Lista_premios() {
+async function listaPremios() {
     try {
-        let resultadoAPI = await Equipe();
+        let resultadoAPIlistaPremios = await Equipe();
 
 
         const Document = document.getElementById("div-premios");
 
-        
+
         const maxCaracteres = 250; // Defina o número máximo de caracteres desejado por descrição
 
 
-        for (let i = 0; i < resultadoAPI.length; i++) {
-            const equipe = resultadoAPI[i];
+        for (let i = 0; i < resultadoAPIlistaPremios.length; i++) {
+            const equipe = resultadoAPIlistaPremios[i];
 
             const criarDivPremio = document.createElement("div");
             criarDivPremio.className = "premios";
@@ -63,13 +63,10 @@ async function Lista_premios() {
 
             Document.appendChild(criarDivPremio);
 
-
-        
-
         }
-    }catch(error){
+    } catch (error) {
         console.error('Falha na busca dos dados');
     }
 }
 
-Lista_premios();
+listaPremios();

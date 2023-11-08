@@ -1,22 +1,18 @@
 // Função para buscar dados da API
 async function buscarDadosAPI(url, elementoId) {
     try {
-        const resultado = await fetch(url, {
+        const vantagens = await fetch(url, {
             method: "GET"
         });
 
-        if (!resultado.ok) {
-            throw Error(`Erro na solicitação: ${resultado.status}`);
-        }
-
-        const respostaEmJson = await resultado.json();
-        const dados = respostaEmJson.result;
+        const respostaEmJsonVan = await vantagens.json();
+        const dadosVan = respostaEmJsonVan.result;
 
         // Adicione os dados ao elemento HTML com o ID fornecido
         const elemento = document.getElementById(elementoId);
 
-        for (let i = 0; i < dados.length; i++) {
-            const dado = dados[i];
+        for (let i = 0; i < dadosVan.length; i++) {
+            const dado = dadosVan[i];
 
             // Crie um parágrafo para exibir a descrição
             const descricaoP = document.createElement("p");
@@ -25,7 +21,7 @@ async function buscarDadosAPI(url, elementoId) {
             // Adicione o parágrafo ao elemento
             elemento.appendChild(descricaoP);
         }
-    }catch(error){
+    } catch (error) {
         console.error('Falha na busca dos dados');
     }
 }
