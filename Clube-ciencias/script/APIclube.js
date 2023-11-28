@@ -7,8 +7,8 @@ async function Clube() {
         var respostaEmJsonClube = await clube.json();
         var dadosClube = respostaEmJsonClube.result[0];
 
-        document.getElementById("descClube").innerText = dadosClube.descricao;
         document.getElementById("imgClube").src = dadosClube.imagem;
+        document.getElementById("descClube").innerText = dadosClube.descricao;
         document.getElementById("faixa_idadeClube").innerText = `${dadosClube.faixa_idade_inicio} - ${dadosClube.faixa_idade_fim} ANOS`;
 
         document.getElementById("turno_manhaClube").innerText = dadosClube.horarios.turno_manha;
