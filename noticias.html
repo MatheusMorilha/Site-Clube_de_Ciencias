@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/foguetim.png" type="image/x-icon">
+    <title>Noticias</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: linear-gradient(#000000, #033780, #467DEB);
+            height: auto;
+            background-repeat: no-repeat;
+            height: auto;
+        }  
+        h1{
+            color: white;
+            margin-left: 30px;
+            font-family: inter;
+        }
+        .divisoria-laranja{
+            background-color: #FC6335;
+            width: 85%;
+            border-radius: 0px 15px 15px 0px;
+            display: flex;
+            margin-top: 30px;
+        }
+        .voltar{
+            background-color: #FC6335;
+            padding: 10px;
+            margin-top: 30px;
+            margin-left: 20px;
+            border-radius: 15px;
+            width: fit-content;
+        }
+        .voltar > a{
+            text-decoration: none;
+            color: white;
+            font-family: inter;
+        }
+
+       .noticia{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 200px;
+       }
+       .txt{
+        width: 40%;
+       }
+       .img-noticia{
+        border-radius: 15px;
+        box-shadow: 3px 1px 2px rgba(0, 0, 0, 0.575);
+        padding-bottom: 0px;
+       }
+       .titulo{
+        font-family: inter;
+        font-size: 34px;
+        color: white;
+        padding-top: 30px;
+       }
+       .subtitulo{
+        font-family: inter ;
+        font-size: 15px;
+        color: white;
+        padding-left: 10px;
+       }
+       .descricao{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        color: white;
+        padding-top: 30px;
+        text-align: justify;
+        padding-left: 10px;
+        max-width: 600px;
+        word-wrap: break-word;
+       }
+
+            #loadMoreButton {
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 30px;
+            
+
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Estilo quando o botão é hover (passagem do mouse) */
+        #loadMoreButton:hover {
+            background-color: #0056b3; 
+        }
+
+
+
+       /* media */
+       @media(max-width: 840px){
+        .txt{
+            width: 90%;
+        }
+       }
+       @media(max-width: 450px){
+        .descricao{
+            font-size: 12px;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="divisoria-laranja">
+        <h1>Noticias</h1>
+    </div>
+    <div class="voltar">
+        <a  href="index.html"> <- Voltar</a>  
+    </div>
+
+    <div id="noticiasContainer"></div>
+
+    <script src="script/APInoticia.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+@media (max-width: 897px){
+
+    .small-images-container img{
+        display: none;
+    }
+
+    .large-image-container img{
+        width: 2vh;
+    }
+
+}
